@@ -31,7 +31,7 @@ const logGameResult = async (answer) => {
 const game = async () => {
   let answer;
   try {
-    answer = await new Promise(resolve => rl.question('Угадайте число от 1 до 100: ', resolve));
+    answer = await new Promise(resolve => rl.question('Угадайте число от 1 до 100: ', resolve)); // Обёртка промиса над коллбэком
   } catch (err) {
     console.error(err);
   }
