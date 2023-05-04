@@ -1,10 +1,7 @@
 import * as readline from 'readline'
 
 function getPasswordChecker(password) {
-    const result = (check_password) => {
-        return (check_password === password)
-    }
-    return result
+  return check_password => check_password === password
 }
 
 const rl = readline.createInterface({
