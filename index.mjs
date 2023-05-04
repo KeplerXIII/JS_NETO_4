@@ -55,6 +55,4 @@ async function guessNumber() {
   fileStream.end();
 }
 
-// guessNumber();
-await getUserInput();
-console.log('1')
+guessNumber();
